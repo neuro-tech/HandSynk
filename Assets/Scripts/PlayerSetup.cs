@@ -7,9 +7,9 @@ public class PlayerSetup : NetworkBehaviour {
 
     [SerializeField]
     Behaviour[] scriptsToDisable;
-    public OvrAvatarBody avatarBody;
+    //public OvrAvatarBody avatarBody;
     //public OculusLaserInput laserInput;
-    public OvrAvatarHand hand1, hand2;
+    //public OvrAvatarHand hand1, hand2;
 
     Camera sceneCam;
 
@@ -17,7 +17,7 @@ public class PlayerSetup : NetworkBehaviour {
 	void Start () {
         if (!isLocalPlayer)
         {
-            Invoke("DisableClientComp", 1.0f);
+            DisableClientComp();
             gameObject.tag = "Client";
             //laserInput.enabled = false;
         }

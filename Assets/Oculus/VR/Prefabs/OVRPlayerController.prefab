@@ -46,6 +46,9 @@ GameObject:
   - component: {fileID: 11493974}
   - component: {fileID: 114577615857793796}
   - component: {fileID: 114516766094855960}
+  - component: {fileID: 114614982345809692}
+  - component: {fileID: 114399531308020824}
+  - component: {fileID: 114387189503179092}
   m_Layer: 0
   m_Name: OVRPlayerController
   m_TagString: Untagged
@@ -1101,6 +1104,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e33623ec5372748b5703f61a4df82d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114387189503179092
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1267208747, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Target: {fileID: 4657387770671146}
+  m_ChildIndex: 1
+  m_SendInterval: 0.1
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_MovementThreshold: 0.001
+  m_InterpolateRotation: 0.5
+  m_InterpolateMovement: 0.5
 --- !u!114 &114388886984991840
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1297,6 +1319,25 @@ MonoBehaviour:
       - 0.4
       - 0
       - 0
+--- !u!114 &114399531308020824
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1267208747, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Target: {fileID: 4155200668833718}
+  m_ChildIndex: 0
+  m_SendInterval: 0.1
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_MovementThreshold: 0.001
+  m_InterpolateRotation: 0.5
+  m_InterpolateMovement: 0.5
 --- !u!114 &114510994446621320
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1372,6 +1413,22 @@ MonoBehaviour:
     i15: 253
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
+--- !u!114 &114614982345809692
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73ca21b1911b53d48aece62644a83220, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scriptsToDisable:
+  - {fileID: 11400010}
+  - {fileID: 2015248}
+  - {fileID: 114660339600823078}
+  - {fileID: 11400010}
 --- !u!114 &114660339600823078
 MonoBehaviour:
   m_ObjectHideFlags: 1
